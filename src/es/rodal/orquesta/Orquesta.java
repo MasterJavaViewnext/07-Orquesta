@@ -20,7 +20,10 @@ public class Orquesta {
 		//Bucle en el que llamo al metodo tocar() a menos que el instrumento sea un Tambor
 		for (Instrumento instrumento : instrumentos) {
 			System.out.println("-------------------------");
-			if (instrumento instanceof Tambor) {
+
+			//Comprobacion con API reflection
+			if(instrumento.getClass() == Tambor.class) {
+			//if (instrumento instanceof Tambor) {
 				((Tambor) instrumento).aporrear();
 			} else {
 				instrumento.tocar();
