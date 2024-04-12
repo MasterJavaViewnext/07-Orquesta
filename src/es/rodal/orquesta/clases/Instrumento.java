@@ -1,5 +1,6 @@
 package es.rodal.orquesta.clases;
 
+
 /**
  * Clase instrumento de la que heredarán el resto
  * Dejo comentado el constructor y la otra forma de expresar el metodo tocar()
@@ -21,7 +22,7 @@ public abstract class Instrumento {
 
 	public void tocar() {
 		if (this.nombre != null) {
-			System.out.println("Tocando el instrumento "+ this.nombre);	
+			System.out.println("Tocando el instrumento "+ this.nombre);
 		} else {
 			System.out.println("Tocando el instrumento "+ this.getClass().getSimpleName());
 		}

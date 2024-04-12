@@ -19,7 +19,6 @@ public class Tambor extends Instrumento {
 		if (this.nombre != null) {
 			System.out.println("Aporreando tambor "+ this.nombre);
 		} else {
-
 			System.out.println("Aporreando tambor "+ this.getClass().getSimpleName());
 		}
 	}

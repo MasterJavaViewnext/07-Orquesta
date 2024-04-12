@@ -35,7 +35,7 @@ public class Orquesta {
 		for (Instrumento instrumento : instrumentos) {
 			System.out.println("-------------------------");
 
-			//Comprobacion con API reflection
+			//Comprobacion de si es un Tambor
 			if(instrumento.getClass() == Tambor.class) {
 			//if (instrumento instanceof Tambor) {
 				((Tambor) instrumento).aporrear();
