@@ -1,4 +1,4 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.clases;
 
 /**
  * Enumeración de los tipos de intrumentos 

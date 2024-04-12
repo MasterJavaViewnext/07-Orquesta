@@ -1,4 +1,11 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.principal;
+
+import es.rodal.orquesta.clases.Flauta;
+import es.rodal.orquesta.clases.Guitarra;
+import es.rodal.orquesta.clases.GuitarraElectrica;
+import es.rodal.orquesta.clases.Instrumento;
+import es.rodal.orquesta.clases.Tambor;
+import es.rodal.orquesta.clases.TipoInstrumento;
 
 /**
  * Clase Orquesta que crea cada uno de los objetos y comprueba el 
@@ -12,8 +19,12 @@ public class Orquesta {
 		//Creación de cada uno de los objetos almacenados en un array de Instrumentos
 		Instrumento[] instrumentos = {
 				new Flauta(),
+				new Flauta("flauta", TipoInstrumento.Viento, "travesera"),
 				new Guitarra(),
+				new Guitarra("guitarra", TipoInstrumento.Cuerda, 6),
 				new GuitarraElectrica(),
+				new GuitarraElectrica("guitarra electrica", TipoInstrumento.Cuerda, 6, 20),
+				new Tambor(),
 				new Tambor("tambor", TipoInstrumento.Percusion, 2)
 		};
 		

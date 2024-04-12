@@ -1,4 +1,4 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.clases;
 
 /**
  * Clase GuitarraElectrica que extiende de Guitarra que a su vez extiende 

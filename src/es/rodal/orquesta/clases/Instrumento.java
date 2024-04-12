@@ -1,4 +1,4 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.clases;
 
 /**
  * Clase instrumento de la que heredarán el resto
@@ -20,8 +20,12 @@ public abstract class Instrumento {
 	}
 
 	public void tocar() {
-		//System.out.println("Tocando el instrumento "+ this.nombre);
-		System.out.println("Tocando el instrumento "+ this.getClass().getSimpleName());
+		if (this.nombre != null) {
+			System.out.println("Tocando el instrumento "+ this.nombre);	
+		} else {
+			System.out.println("Tocando el instrumento "+ this.getClass().getSimpleName());
+		}
+		
 	}
 	
 	public void afinar() {

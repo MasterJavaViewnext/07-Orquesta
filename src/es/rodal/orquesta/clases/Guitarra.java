@@ -1,4 +1,4 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.clases;
 
 /**
  * Clase Guitarra que extiende de Instrumento y de la que hereda 

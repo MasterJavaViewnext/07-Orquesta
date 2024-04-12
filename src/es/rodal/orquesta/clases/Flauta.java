@@ -1,4 +1,4 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.clases;
 
 /**
  * Clase Flauta que extiende de Instrumento y sobreescribe el método

@@ -1,4 +1,4 @@
-package es.rodal.orquesta;
+package es.rodal.orquesta.clases;
 
 /**
  * Clase Tambor que añade una variable tamanho y un método aporrear()
@@ -16,6 +16,11 @@ public class Tambor extends Instrumento {
 	}
 	
 	public void aporrear() {
-		System.out.println("Aporreando tambor "+ this.nombre);
+		if (this.nombre != null) {
+			System.out.println("Aporreando tambor "+ this.nombre);
+		} else {
+
+			System.out.println("Aporreando tambor "+ this.getClass().getSimpleName());
+		}
 	}
 }
